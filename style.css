@@ -150,33 +150,6 @@ form {
   align-items: center;
 }
 
-form input,
-form textarea,
-form button {
-  width: 100%;
-  max-width: 600px;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  background-color: var(--secondary-color);
-  color: var(--neutral-color);
-}
-
-form button {
-  background-color: var(--hover-color);
-  color: var(--neutral-color);
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-form button:hover {
-  background-color: var(--neutral-color);
-  color: var(--primary-color);
-}
-
 .social-links {
   margin-top: 20px;
   display: flex;
@@ -277,12 +250,6 @@ html {
   .grid-container {
     grid-template-columns: 1fr;
     gap: 15px;
-  }
-
-  form input,
-  form textarea,
-  form button {
-    max-width: 100%;
   }
 
   .social-links {
