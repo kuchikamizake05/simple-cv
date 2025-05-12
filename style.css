@@ -1,0 +1,277 @@
+:root {
+  --primary-color: #0d1117;
+  --secondary-color: #161b22;
+  --neutral-color: #c9d1d9;
+  --hover-color: #58a6ff;
+  --border-color: #30363d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: var(--neutral-color);
+  background-color: var(--primary-color);
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 5px 0 20px;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: var(--neutral-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+}
+
+section {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--hover-color);
+  margin-bottom: 10px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--neutral-color);
+  margin-bottom: 5px;
+}
+
+section#profile {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.profile-photo {
+  width: 20%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 30px auto 0;
+  display: block;
+}
+
+.education-photo {
+  width: 15%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section#contact {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  text-align: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+}
+
+form button {
+  background-color: var(--hover-color);
+  color: var(--neutral-color);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links .social-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.social-links .social-icon:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  margin-top: 20px;
+}
+
+aside#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside#profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-photo {
+    width: 30%;
+  }
+
+  .education-photo {
+    width: 20%;
+    max-width: 80px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    max-width: 100%;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-links .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}

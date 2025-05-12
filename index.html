@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Faaid Sakhaa</h1>
+      <p>Web Developer | Tech Enthusiast | Public Speaker</p>
+      <nav>
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <aside id="profile">
+        <img src="./src/profil.jpeg" alt="Faaid Sakhaa" class="profile-photo" />
+        <div class="profile-text">
+          <h2>About Me</h2>
+          <p>
+            Hello, I am currently an undergraduate student majoring in Information
+            Engineering at Universitas Gadjah Mada. I have hands-on experience in
+            technical fields, logistics, and leadership. I am an easy-going and
+            responsible person. I have a strong desire to keep learning, expand my
+            experiences, and continuously improve myself to become better than I was
+            before.
+          </p>
+        </div>
+      </aside>
+
+      <div class="grid-container">
+        <section id="experience">
+          <h2>Experience</h2>
+          <article class="experience-item">
+            <h3>Co-Facilitator</h3>
+            <p>Pionir Kesatria FT UGM | 2025 - Present</p>
+            <ul>
+              <li>▸ Led event guiding and participant engagement</li>
+              <li>▸ Facilitated group interactions and ice-breaking</li>
+              <li>▸ Created a fun and inclusive atmosphere</li>
+            </ul>
+          </article>
+          <article class="experience-item">
+            <h3>Public Relation</h3>
+            <p>KMTETI FT UGM | 2025 - Present</p>
+            <ul>
+              <li>▸ Prepare and set up the visit venue</li>
+              <li>▸ Coordinate visit schedules and logistics</li>
+              <li>▸ Assign and manage visit guides</li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <div class="education-container">
+            <div class="education-item">
+              <h3>Bachelor of Information Engineering</h3>
+              <p>Gadjah Mada University | 2024 - 2028</p>
+            </div>
+            <img
+              src="./src/ugm.png"
+              alt="Gadjah Mada University"
+              class="education-photo"
+            />
+          </div>
+          <div class="education-container">
+            <div class="education-item">
+              <h3>Natural Science and Mathematics</h3>
+              <p>MAN 1 Yogyakarta | 2021 - 2024</p>
+            </div>
+            <img
+              src="./src/mansa.png"
+              alt="MAN 1 Yogyakarta"
+              class="education-photo"
+            />
+          </div>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>▸ HTML, CSS, JavaScript</li>
+            <li>▸ React, Next.js, Node.js</li>
+            <li>▸ Communication, Teamwork, Time Management</li>
+          </ul>
+        </section>
+
+        <section id="languages">
+          <h2>Languages</h2>
+          <ul>
+            <li>▸ Indonesian - Native Speaker</li>
+            <li>▸ English - Intermediate</li>
+            <li>▸ Javanese - Native Speaker</li>
+          </ul>
+        </section>
+      </div>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+          <a
+            href="https://wa.me/628972100220"
+            title="WhatsApp"
+            rel="noopener noreferrer"
+          >
+            <img src="./src/wa.png" alt="WhatsApp" class="social-icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/faaid-sakhaa"
+            title="LinkedIn"
+            rel="noopener noreferrer"
+          >
+            <img src="./src/link.png" alt="LinkedIn" class="social-icon" />
+          </a>
+          <a
+            href="https://github.com/kuchikamizake05"
+            title="GitHub Profile"
+            rel="noopener noreferrer"
+          >
+            <img src="./src/git.png" alt="GitHub" class="social-icon" />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Faaid Sakhaa. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
