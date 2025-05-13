@@ -223,7 +223,7 @@ html {
     justify-content: center; 
     gap: 5px; 
     padding: 0;
-    margin: 0 2px 0; 
+    margin: 0 0.25px 0; 
   }
 
   nav ul li a {
